@@ -1,0 +1,97 @@
+#p1_rC {
+  width: 100%;
+  display: flex;
+  gap: 32px;
+}
+.releaseLoader{
+  width: 100%;
+  gap: 32px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.releaseCard {
+  border: 2px solid black;
+  width: 500px;
+  min-width: 500px;
+  height: fit-content;
+  padding: 16px;
+  position: relative;
+  transform: rotate3d(0,1,0,0deg);
+  transition: transform 1s ease-in-out;
+  &:hover{
+    cursor: pointer;
+  }
+  .backside{
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    position: absolute;
+    transform: rotate3d(0,1,0,180deg);
+    background-color: white;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: all 0s .5s ease-in-out;
+    a{
+      padding: 16px;
+      width: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #e3e37f;
+      border-radius: 5px;
+    }
+  }
+  &.backside{
+    transform: rotate3d(0,1,0,180deg);
+    .backside {
+      visibility: visible;
+      opacity: 1;
+
+
+    }
+  }
+
+  .cover {
+    img {
+      width: 300px;
+      aspect-ratio: 1/1;
+      border: 2px solid black;
+    }
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  .artist_name {
+    font-size: 2rem;
+    margin-left: 10px;
+  }
+
+  .type_badge {
+    border: 2px solid black;
+    border-left: 0;
+    border-radius: 0 25px 25px 0;
+    --element-width: fit-content;
+    width: var(--element-width);
+    background-color: #e3e37f;
+    padding: 16px 16px 16px 64px;
+    position: absolute;
+    font-size: 3rem;
+    transform: rotate(90deg) translateX(100%);
+    transform-origin: top right;
+
+    top: 0;
+    right: 10%;
+  }
+
+
+}
+
