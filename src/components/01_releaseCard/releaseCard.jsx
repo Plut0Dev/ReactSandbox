@@ -53,7 +53,7 @@ function ReleaseCard(props) {
                 </div>
                 <div className="backside">
                     {
-                        links.spotify && <a href={links.spotify}>Spotify</a>
+                        links.spotify && <a href={links.spotify} target={"_blank"}>Spotify</a>
 
                     }
                     {

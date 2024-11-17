@@ -43,6 +43,9 @@
   transform: rotate3d(0, 1, 0, 0deg);
   transition: transform 1s ease-in-out;
 }
+.releaseCard a {
+  font-size: 1.5rem;
+}
 .releaseCard:hover {
   cursor: pointer;
 }
@@ -105,6 +108,25 @@
   transform-origin: top right;
   top: 0;
   right: 10%;
+}
+
+#p2_tjs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#p2_tjs .first_scene {
+  width: 300px;
+  height: 400px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+  text-decoration: none;
 }
 
 body {

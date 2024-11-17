@@ -19,6 +19,9 @@
   position: relative;
   transform: rotate3d(0,1,0,0deg);
   transition: transform 1s ease-in-out;
+  a{
+    font-size: 1.5rem;
+  }
   &:hover{
     cursor: pointer;
   }
